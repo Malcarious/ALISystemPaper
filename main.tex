@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 
 \usepackage{graphicx}
 \usepackage{comment}
@@ -17,12 +17,19 @@
 \author{Brenden J Elash, Adam E Bourassa, Douglas A Degenstein, Paul(?) }
 
 \begin{document}
+\renewcommand\bibname{BiBTex.bib}
 
 \maketitle
 
 \section{Introduction}
 
 The Atmospheric Limb Imager (ALI) is a prototype atmospheric instrument developed at the University of Saskatchewan with the eventual plan for a satellite instrumentation in the future with the purpose to gather high resolution horizontal and vertical aerosol extinction profiles. The purpose of the ALI prototype is to test and verify the use of an Acousto-Optical Tunable Filter (AOTF), the fundamental technology behind ALI, in a space environment and to be gather atmospheric sulfate aerosol profiles with high spacial resolution. ALI will measure light from the atmosphere through the limb geometry which measures the radiance from scattered sunlight from the sunlit atmosphere. ALI is a single channel instrument measuring radiance from the visible to the near infrared wavelengths (650-950~nm) and through successive images build spectral information. The system uses a telescoptic front end to pass collimated light through through the AOTF which is then focused onto the the detector. The AOTF has the unique property of separating the incoming radiance into each of its polarized components selecting one and rotating it polarization through 90 \si{\degree} allowing on to recover some polarization information of the incoming radiance. The ALI prototype was complete in August of 2014 with a stratospheric balloon test flight from the Canadian Space Agency balloon launch facility in Timmins Ontario onboard the CNES gondola platform on September 20, 2014.
+
+The atmosphere has been monitored in several geometries throughout the history. Occultation was one of the first methods used on satellite instrumentation to measure atmospheric quantities including ozone which included SAM II \citep{McCormick1979}, SAGE II \citep{McCormick1987}, and SAGE III \citep{Thomason2003}. Different instrumentation using other geometries were also put into space to acquire atmospheric data for different species with altering resolutions and the quantity of data that could be acquired in a single day. One such geometries is the limb geometry which measures radiance from the sun light atmosphere as it scatters and interacts with molecules in the atmosphere. However, the limb scatter geometry has a complexity that requires a foreword model to be able to model the scattering interaction, both single and multiple, between different consituents in order to be able to acquire any useful atmospheric information form the recorded data. Two instruments from the previous generation of space remote sensing instruments use have sucessfully used limb scatter to determine atmospheric parameters, Optical Spectrograph and InfraRed Imaging System (OSIRIS) an Canadian instrument onboard the Odin satellite \citep{Llewellyn2004} and SCanning Imaging Absorption spectroMeter for Atmospheric CHartographY (SCIAMACHY) onboard the ENVISAT \citep{Bovensmann1999} which are grating spectrometers that can only acquire data at a single altitude at a time so a series of exposures is required to create a vertical profile. The new proposed method with ALI allows for a two dimensional spacial images of a single wavelength polarized light to be acquired giving both vertical and horizontal resolution of the environment through the use of the innovative AOTF technology.
+
+Current generation instrumentation does not have the necessary resolution needed for current scientific needs. The pervious generation instruments (Talk about aerosol here)
+
+In this paper the first section will outline the technology behind the AOTF used within the ALI system and then describe the optical design behind ALI and an ulterior optical presentation including and comparison with the Belgium instrument ALTIUS. Followed by ALI's maiden flight onboard the CNES CARMEN gondola from the CSA balloon launch facility in Timmins, Ontario including the conditions and trajectory of the flight day, and the measurement taken during the campaign including an analysis of the converion from raw measurement into calibrated data. Lastly, an retrieval algorithm for aerosol extinction and particle size parameters will be outlined and then preformed on the from the data for the campaign. 
 
 \section{Instrument Design}
 
@@ -56,7 +63,13 @@ What the final measurements showed and how they compare to SOLAMON and OSIRIS
 
 Self explanatory.
 
-Figure for Measurement and retrieval section not completed yet.
+Figures for Measurement and retrieval section not completed yet.
+
+\newpage
+\bibliographystyle{thesis}
+\bibliography{BiBTex} 
+
+\newpage
 
 \begin{figure}[h!]
     \begin{center}
@@ -77,5 +90,7 @@ Figure for Measurement and retrieval section not completed yet.
     \caption[ALI Telescopic Design Prototype]{Ray Tracing diagram of the telescopic lens system simulated by Code V. The elements in the system are the following: (1) 100~mm focal length plano-convex lens. (2) Location where shutter will be located to limit stray light (3) 100~mm focal length plano-convex lens. (4) Brimrose AOTF characterized in \autoref{sec:3.1:AOTFCalibration}. (5) 75.6~mm focal length plano-convex lens. (6) Imaging plane. It should be noted that the x and y scales are not the same in this image. Also, in the lab a polarizer is added in front and behind the AOTF as well as prisms behind the AOTF.}
     \label{fig:3.2:telescopicRayTracing}
 \end{figure}
+
+
 
 \end{document} 

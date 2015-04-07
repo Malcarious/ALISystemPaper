@@ -46,3 +46,12 @@ Temporary Items
 main.pdf
 *.bak
 main.tex.sav
+*.aux
+*.bak
+*.synctex
+main.pdf
+*.log
+main.blg
+*.bbl
+main.blg
+*.aux
