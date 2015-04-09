@@ -48,3 +48,5 @@ Temporary Items
 *.bbl
 *.synctex
 main.pdf
+*.bak
+*.sav
