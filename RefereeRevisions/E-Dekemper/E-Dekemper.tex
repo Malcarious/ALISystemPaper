@@ -1,0 +1,153 @@
+\documentclass[12pt, notitlepage]{article}
+
+\title{Interactive comment to ``The Aerosol Limb Imager: acousto-optic imaging of limb scattered
+sunlight for stratospheric aerosol profiling'' by B. J. Elash et al}
+
+\author{B.~J. Elash et al. (brenden.elash@usask.ca)}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+
+We would like to thank the referee for their helpful comments and suggestions. Below are the referee's comments in italics followed by our reply.
+
+\hrulefill
+
+\textit{1) I am not sure that the introduction section should be so long. To me, regarding the
+scope of the paper, the not-so-concise discussion on previous limb missions having
+measured stratospheric aerosols is not helping in appreciating the work done here.
+Shortening this part could free some space for some missing information in the calibration
+section or for the error analysis.}
+
+\textbf{Reply:}
+
+\hrulefill
+
+\textit{2) p. 13290, l. 23-24: the width of the spectral transmission function of an AOTF
+is something which is frozen at the manufacturing step, i.e. when the crystal cutting
+angles are frozen. In that sense, there is no such thing like typical bandwidths, as one
+can design an AOTF with a 5-10 times narrower or broader bandpass.}
+
+\textbf{Reply:}
+
+\hrulefill
+
+\textit{3) p. 13291, l. 24: The acoustic wave in this kind of device is not a standing wave. In
+TeO2 AOTF, it is a shear wave mostly absorbed at the opposite end of the crystal.}
+
+\textbf{Reply:}
+
+\hrulefill
+
+\textit{4) AOTF design. There is an extensive discussion on the selection of the most appropriate
+optical design which is well argued. However, I wonder why the rear facet of the
+AOTF was cut such as depicted in fig.2 (by the way, replace "standing RF" by "acoustic"
+in this figure). From the moment it is decided to work with the e-light as input, a
+better configuration could have been found where the diffracted beam remains parallel
+to the incident axis and a larger angular separation is achieved with the 0-order. This is
+important because with a half-FOV of 3◦, and taking into account your drawing and the
+fact that the diffracted beam leaves the crystal with an angle of 2.7◦, there should be a
+significant overlapping of the 0th and 1st orders... Could you better justify this design
+choice in the text?}
+
+\textbf{Reply:}
+
+\hrrulefill
+
+\textit{5) I think the section 2.2 should contain a proper mathematical description of the radiometric
+model of the instrument, including the spectral transmission function, the
+polarization sensitivity and other effects such as PRNU. This would certainly help in
+understanting the impact of the calibration uncertainties when discussing the error budget.}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+\textit{6) p. 13299, l. 14-15: I would not say that 1.2nm is much less than the AOTF spectral
+resolution. You indeed performed a characterization of the spectral transmission
+function of the AOTF with a not-exactly monochromatic light source. In the end you got
+a result (fig.6a) which is the convolution of the incident light spectrum and the AOTF
+response. The typical sidelobes are not completely resolved, but this is not really an
+issue for your calibration as the results seem perfectly in line with standard AOTF performance.
+I would recommend next time to work with sharp emission lines or laser lines
+at some selected wavelengths, and rely on the physics of acousto-optic interaction to
+extrapolate the AOTF response function between the calibration points.}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+\textit{7) Section 3.1: Why didn’t you use a physical model to fit the experimental data with
+the AOTF tuning curve? This would provide a better understanding of the overall instrument.
+Also, as the F(lambda) relationship is dependent on the crystal temperature,
+it would be usefull to compare the temperature in the lab when the calibration of the
+instrument was done with the temperature of the crystal during the flight. Again, a
+physical model of the AOTF would help in extrapolating the calibration to other working
+temperatures. The reported 0.1\% error in the fit can yield an uncertainty as high as
+1nm. A 10◦C shift of temperature would also yield a 1nm drift. Is this still tolerable for
+your measurements? More details on the precision of the wavelength selection would
+be appreciated.}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+\textit{8) Section 3.2: It is mentioned that a diffraction efficiency of 54-64\% is observed, but
+nothing is said concerning the power applied to the transducer of the crystal. Also,
+these values appear quite low compared to typical DE for TeO2 easily reaching 90\%.
+Moreover the method described neglects the attenuation by the crystal itself, and it is
+not clear if the incident light was initially polarized. I would recommend to re-write this
+section such that one can better understand how these values could be obtained.}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+\textit{9) Stray light: Cycling between the ON/OFF state of the AOTF is probably a unique
+feature of the AOTF which is well emphasized in the text. However, knowing how
+complex straylight characterization can be, I wonder why all these efforts were made
+as in the end, the problem is mostly solved by the ON/OFF approach. The only effect
+which is not solved by the ON/OFF method is the straylight generated after the AOTF.
+Is there something that can be said on this based on the characterization that was
+performed?}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+\textit{10) Relative flat fielding: It is not clear which setup was used to create the radiometric
+flat field, and if the complete FOV was illuminated. From what can be read, I understand
+that only sub-sections of the detector were illuminated, so it is not clear how the
+response of pixels looking at the bottom of the scene can be related to the response of
+the pixels looking above... This is important as you perform a spatial normalization in
+the processing algorithm. A mathematical radiometric model would help understanding
+what has been done. I would suggest to re-write this section in order to explain how
+the setup looked like, with which accuracy for the flatness of the radiometric field, and
+how does it impact the final product.}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+\textit{11) Conclusion: Taking into account the impressive amount of work that has been done
+in this work, I would have expected some more discussion in the concluding section.
+From what can be read in this section, further improvements of the instrument would
+only consist in reaching absolute radiometric calibration, and a better flat fielding. I am
+not convinced that this will significantly reduce the error bars (50\% at 1 sigma). Actually
+the shortness of the conclusion reflects the absence of a detailed error budget. This is
+probably my main concern with the manuscript: due to the absence of a mathematical
+model of the instrument, it is not possible to understand the amplitude of the different
+errors, and the results presented in fig.12 cannot really be interpreted.}
+
+\textbf{Reply:} 
+
+\hrulefill
+
+
+
+
+\end{document}
+
