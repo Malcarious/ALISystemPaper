@@ -106,7 +106,7 @@ measurements, which have a~vertical resolution of approximately
 1\,\unit{km}, have generally compared well with ground based and
 in-situ measurements, although there are challenges associated with
 determining microphysical
-parameters and comparison between instruments can be significant different. (Russell and McCormick, 1989; Kovilakam et~al.,
+parameters and comparison between instruments can be challenging. (Russell and McCormick, 1989; Kovilakam et~al.,
 2015). However, solar occultation is generally a~robust and stable
 technique as it directly measures atmospheric optical depth, along
 with the exo-atmospheric solar spectrum with each scan, allowing for
@@ -114,7 +114,7 @@ straightforward retrieval of aerosol extinction coefficient (Damadeo
 et~al., 2013). The SAGE III mission came to an end in 2006 and the occultation measurements have continued from the currently operational MAESTRO and
 ACE-Imager instruments on SciSat (McElroy et~al., 2007; Gilbert
 et~al., 2007) and have had some success producing stratospheric aerosol
-extinction products (Vanhellemont et~al., 2008; Sioris et~al., 2010),
+extinction products (Vanhellemont et~al., 2008; Sioris et~al., 2010).
 Furthermore, a~manifestation of SAGE III is planned
 for deployment on the International Space Station in 2016 (Cisewski
 et~al., 2014).
@@ -132,7 +132,7 @@ satellite limb scatter instrument to retrieve stratospheric aerosol
 extinction (Bourassa et~al., 2007). The current OSIRIS version 5.07
 data product, which provides 750\,\unit{nm} extinction profiles at
 approximately 2\,\unit{km} vertical resolution, has been shown to
-agree relatively well, generally within 15\%, with SAGE II and SAGE III occultation
+agree relatively well, generally below 30\% below 30\,\unit{km}, with SAGE II and SAGE III occultation
 measurements  (Bourassa et~al., 2012b; Rieger et~al., 2015). The
 SCanning Imaging Absorption spectroMeter for Atmospheric CHartographY
 (SCIAMACHY) instrument on Envisat (Bovensmann et~al., 1999) uses
@@ -167,7 +167,7 @@ et~al., 2015). Furthering the understanding of the transport of aerosol near
 and across the tropopause would also benefit from higher spatial and temporal
 resolution observations. This is evident in the case of volcanic plumes, such
 as that from Nabro in 2011, the transport and origin of which has been
-studied extensively and the conclusions are somewhat controversially (Bourassa et~al., 2012c,
+studied extensively and the conclusions are somewhat controversial (Bourassa et~al., 2012c,
 2013; Vernier et~al., 2013; Fromm et~al., 2013, 2014; Fairlie et~al., 2014;
 Clarisse et~al., 2014). However, this is also the case for the formation of
 background-level aerosol, particularly in the region of the Asian and North
@@ -213,8 +213,8 @@ developed as large aperture, imaging quality devices, operate very
 efficiently in the red and near infrared spectral range, which is
 a~well matched spectral range for limb scatter sensitivity to aerosol
 and cloud (Rieger et~al., 2014).  Additionally, the spectral bandpass
-of the AOTF, which is typically between 3--6\,\unit{nm} at these
-wavelengths, is very suitable for the broadband scattering
+of the AOTF has reasonable resolutions at these
+wavelengths such as 3--6\,\unit{nm}, which is very suitable for the broadband scattering
 characteristics of the aerosol limb signal. The two dimensional
 imaging nature of the design provides the capability to achieve at
 least sub-kilometer resolution at the tangent point, which is on the
@@ -254,7 +254,7 @@ optical design.
 The primary filtering device behind ALI and the technology that allows
 for the two dimensional spatial imaging is the AOTF, which is
 typically made from a~birefringent crystal. A~radio frequency (RF)
-wave is propagated through the crystal, and forms an acoustic standing
+wave is propagated through the crystal, and forms an acoustic shear
 wave that interacts with an incoming beam of light in an effect
 similar to the diffraction of a~specific wavelength. The use of an
 AOTF for an imaging system has several distinct advantages due to its
@@ -322,7 +322,7 @@ is cut at a~specific angle, such that the refraction at this final
 surface compensates for the angular change with wavelength. For our
 specific sample, the diffracted extraordinary light beam is
 compensated in this way and is diffracted 2.7{\degree} from the
-input optical axis of the device. The ordinary light beam also
+input optical axis of the device with a minimum separation angle of 6.4{\degree} between the zeroth and first order. The ordinary light beam also
 undergoes diffraction, but at a~non-constant angle from the optical
 axis with respect to wavelength and is not imaged by the
 system. A~schematic of the basic light paths through the AOTF is shown
@@ -394,7 +394,7 @@ that occurs is given by the following relation
 \delta =\left(n\left(\lambda \right)-1 \right)\frac{t\theta} {n(\lambda)}
 \end{align}
 where $\delta$ is the displacement from the original path and $t$ is the
-thickness of the crystal. However, it turns out that this wavelength
+thickness of the crystal. However, this wavelength
 dependent change is less than a micron for the current ALI design and is considered negligible.
 
 In light of the requirements for imaging aerosol, we have chosen
@@ -448,7 +448,7 @@ assess the capability of the system within the tolerances of the
 mounting equipment and was found that the system was insensitive to
 tilts and offsets within the system.
 
-The SASKTAN-HR (Bourassa et~al., 2008; Zawada et~al., 2015) radiative
+The SASKTRAN-HR (Bourassa et~al., 2008; Zawada et~al., 2015) radiative
 transfer model was used to assist in determining exposure times and
 entrance pupil of ALI. This was performed by using ground-based sky
 measurements during a~cloudless day at an azimuth of 90{\degree} from
@@ -571,7 +571,7 @@ tuning curve was as determined as
 F=\exp \left(19.793 \right)\lambda^{-3.381+0.168\log \lambda}
 \end{align}
 where $\lambda$ is in nanometers and $F$ is in MHz with a~0.1\,{\%}
-error in the central wavelength (see Fig.~6b). It should be noted that
+error in the central wavelength (see Fig.~6b). Even when considering the temperature change the AOTF would experience during the mission compared to the lab measurements the error of wavelength calibration during the campaign would at most be 2.5\,nm which is acceptable for the slowly varying broadband scattering cross section of aerosol. Furthermore, it should be noted that
 even though the AOTF optical range is 600 to 1200\,\unit{nm} our
 analysis only measured wavelengths from 600 to 1080\,\unit{nm} due to
 the low quantum efficiency of the CCD beyond this range.
@@ -589,14 +589,7 @@ specification required in order to retrieve aerosol information as the
 aerosol scattering cross varies relatively slowly across the visible
 and near infrared spectral range.
 
-The same set of experimental data was also used to determine the
-diffraction efficiency of the AOTF, along with an additional
-measurement of the intensity of the incident collimated light
-beam. This was simply acquired by removing the AOTF from the same
-experimental setup. The incident light source was then measured with
-the iHR320 spectrometer and Synapse CCD. By taking the ratio of the
-intensity at the diffracted wavelength to the incident intensity the
-diffraction efficiency was determined. It was found to vary between
+An experiment was performed on several wavelengths to determine the RF power that yielded the highest throughput through the AOTF using an collimated light source. For the AOTF in ALI the maximum throughput occurred when the RF power was at the power limit of the AOTF which was 2\,W. Following an experiment was set up to determine the diffraction efficiency of the AOTF and two sets measurements were required. The first is the experimental data used to preform the wavelength calibration, the second is measurements of the intensity of the incident collimated light beam. The light in both experiments was linearly polarized and aligned with the polarization axis of the AOTF and for the second set the AOTF was simply removed from the optical chain. It should be noted that the attenuation of the AOTF crystal itself was not determined independently and will be combined with the diffraction efficiency. We are more concerned about signal throughput of the device so the combination of the effects is acceptable. The incident light source was then measured with the same iHR320 spectrometer and Synapse CCD. By taking the ratio of the intensity at the diffracted wavelength to the incident intensity the diffraction efficacy was determined. It was found to vary between
 54--64\,{\%} across the measured spectral range. It should be noted
 that the diffraction efficiency changes also with respect to incoming
 angle and this experimental determination only measured the
@@ -645,7 +638,7 @@ immediately obtained with the same exposure time. For the calibration images an 
 The flat-field calibration corrects optical and detector level
 differences in the system across the field of view such that
 a~calibrated image of a~perfectly diffuse source yields a~constant
-value across the image. The resulting images from the diffuse source
+value across the image. The experiment was set up using a 250\,W halogen bulb that was collimated and passed through a diffusing plate for a to yield a consistent even output for the source. The entrance aperture of ALI was placed 100\,mm from the diffusing plate. The diffusing plate was imaged at a variety of wavelengths (from 600 to 1000\,nm) and exposure times (ranging from 0.1 seconds to 2 minutes). Images from the diffuse source
 described above were used to determine the flat fielding corrections
 for ALI. These were determined in two steps: spatial and
 spectral. First, for the spatial correction, for each image at a~given
@@ -723,9 +716,9 @@ some indication of horizontal variation in radiance significantly above the
 cloud level, possibly due to real atmospheric variability in the aerosol
 layer. It should also be noted that some high altitude stray light is also
 visible in this mean residual image that was not observed in the laboratory
-tests. This may be due to contamination from scattering from a~baffle vein or
+tests. For the high altitudes in the range of 27 to 30\,\unit{km} the expected SNR was estimated to be between 2-3 but for the campaign SNR for some regions dropped down to approximately one. This may be due to contamination from scattering from a~baffle vein or
 a~nearby component of the gondola, although the true cause is unknown at this
-point.
+point. 
 
 For ease of further analysis, and to increase the precision of the
 measurements to a~minimum of 0.6 MTF the images were averaged into
@@ -881,13 +874,22 @@ dependence of the cross section with respect to particle size.
 The ALI 750\,\unit{nm} aerosol extinction profile is shown in the
 right panel of Fig.~12 in blue with the shading representing the
 precision of the retrieval. The error is strictly based on measurement
-error and neglects any model and atmospheric state errors. The red
-curve is the average 750\,\unit{nm} aerosol extinction profiles of the
+error and neglects any model and atmospheric state errors. From the calibration on ALI the uncertainty was between 5-8\% dependent on altitude and is composed of approximately 3-5\% from the flat fielding calibration and the last 1-3\% is attributed primarily to dark current, DC offset, and stray light calibrations. When calculating the measurement vector the covariance is based on the uncertainty in the radiance at the retrieved altitude and the reference altitude. The covariance of the measurement vector, as seen in Eq. (9), is given by
+\begin{align}
+S_{\epsilon,ij}=
+\begin{cases}
+    \left(\frac{\delta I_v(z_{j},\lambda)}{I_v(z_{j},\lambda)}\right)^{2} + \left(\frac{\delta I_v(z_{ref},\lambda)}{I_v(z_{ref},\lambda)}\right)^{2}, & \text{if } i=j\\
+    \left(\frac{\delta I_v(z_{ref},\lambda)}{I_v(z_{ref},\lambda)}\right), & \text{otherwise}.
+\end{cases}
+\end{align}
+This results in relative error in the measurement vectors of approximately 10-15\% for the cross terms and and 25-35\% for the diagonal terms. Propagating this uncertainty though the retrieval method results in large uncertainty on the retrieved aerosol extinction around 40-70\% dependent on the altitude. Reducing the error in the relative calibration would greatly improve the overall uncertainty in the ALI retrievals since it contributes the current largest factor to the calibrated radiances.
+
+The 750\,\unit{nm} aerosol extinction determined by ALI is compared to the retrieved aerosol extinctions by OSIRIS. In the right panel of Fig.~12 the red curve is the average 750\,\unit{nm} aerosol extinction profiles of the
 same five coincident OSIRIS scans used for the ozone profile. The
 retrieved extinction profiles from ALI and OSIRIS are within with the
 total retrieval uncertainty. Aerosol is notoriously
 difficult to validate in remote sensing with various technique and
-instrument geometries, and yet the SAGE II, SAGE III and OSIRIS
+instrument geometries, and the SAGE II, SAGE III and OSIRIS
 differences are generally below 20--30\,{\%} up to 30\,\unit{km}
 (Bourassa et~al., 2012b; Rieger et~al., 2015). There are also several possible systematic errors not
 accounted for in the inversion including the choice of retrieval
@@ -1512,7 +1514,7 @@ Spectral range (nm)&650--950 \\
 
 \begin{figure}
 \includegraphics[height=90mm]{amt-2015-329-discussions-f02.pdf}
-\caption{\textbf{(a)} An AOTF undergoing Bragg diffraction with an
+\caption{\textbf{(a)} A representative AOTF undergoing Bragg diffraction with an
   unpolarised incident wave with a~RF wave applied represented by the
   arrow. After the diffraction event four output signals are formed:
   the zeroth order and first order ordinary (o) and extraordinary (e)
