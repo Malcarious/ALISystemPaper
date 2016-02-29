@@ -1,5 +1,10 @@
 \documentclass[12pt, notitlepage]{article}
 
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+
+\setlength\parindent{0pt}
+
 \title{Interactive comment to ``The Aerosol Limb Imager: acousto-optic imaging of limb scattered
 sunlight for stratospheric aerosol profiling'' by B. J. Elash et al}
 
@@ -12,7 +17,7 @@ sunlight for stratospheric aerosol profiling'' by B. J. Elash et al}
 \end{titlepage}
 
 
-We would like to thank the referee for their helpful comments and suggestions. Below are the referee's comments in italics followed by our reply. A full list of changes can be seen in the attached file.
+We would like to thank Dr. Dekemper for his helpful comments and suggestions. Below are the referee's comments in italics followed by our reply. A full list of changes can be seen in the attached file.
 
 \hrulefill
 
@@ -22,7 +27,7 @@ measured stratospheric aerosols is not helping in appreciating the work done her
 Shortening this part could free some space for some missing information in the calibration
 section or for the error analysis.}\\
 
-\textbf{Reply:} The discussion of previous aerosol missions is quite relative in regard to the work presented here. The motivating work behind ALI is to eventually use an ALI type instrument on a microsat mission to continue the global aerosol record. This record has been used recently to infer climate altering effects and sources of additional stratospheric aerosol through small volcanic eruptions with the use of serval measurement techniques. Outlining this information in detail is fundamental to understanding the purpose behind the ALI instrument and its mission.
+\textbf{Reply:} The discussion of previous aerosol missions is quite relevant in regard to the work presented here. The motivating work behind ALI is to eventually use an ALI type instrument on a microsat mission to continue the global aerosol record. Outlining this information in detail is fundamental to understanding the purpose behind the ALI instrument and its mission.
 
 \hrulefill
 
@@ -50,10 +55,10 @@ better configuration could have been found where the diffracted beam remains par
 to the incident axis and a larger angular separation is achieved with the 0-order. This is
 important because with a half-FOV of 3◦, and taking into account your drawing and the
 fact that the diffracted beam leaves the crystal with an angle of 2.7◦, there should be a
-significant overlapping of the 0th and 1st orders... Could you better justify this design
+significant overlapping of the 0th and 1st orders\ldots Could you better justify this design
 choice in the text?}\\
 
-\textbf{Reply:} The geometry in Fig. 2 is meant to be representation of the diffraction interactions within the AOTF and not accurate to physical geometry and the text has been changed to ``A representative AOTF...'' and the phase ``standing RF'' and been replaced with ``acoustic''. Although the diffraction angle is 2.7$^{\circ}$ the separation between the zeroth and first order is at minimum 6.4$^{\circ}$ which alleviates any concern with 0th order and 1st order overlap. The addition of the separation angle has been added into the text in the following sentence ``...in this way and is diffracted 2.7◦ from the input optical axis of the device with a minimum separation angle of 6.4$^{\circ}$ between the zeroth and first order.'' (pg 13293, line 18). As for 2.7$^{\circ}$ offset and not having the light propagate straight through the system was just a feature of the AOTF that we purchase from the selection available at the time of purchase.
+\textbf{Reply:} The geometry in Fig. 2 is meant to be representation of the diffraction interactions within the AOTF and not accurate to physical geometry and the text has been changed to ``A representative AOTF\ldots'' and the phase ``standing RF'' and been replaced with ``acoustic''. Although the diffraction angle is 2.7$^{\circ}$ the separation between the zeroth and first order is at minimum 6.4$^{\circ}$ which alleviates any concern with 0th order and 1st order overlap. The addition of the separation angle has been added into the text in the following sentence ``\ldots in this way and is diffracted 2.7◦ from the input optical axis of the device with a minimum separation angle of 6.4$^{\circ}$ between the zeroth and first order.'' (pg 13293, line 18). The 2.7$^{\circ}$ offset was just a feature of the AOTF that we purchased from the selection available at the time.
 
 \hrulefill
 
@@ -62,7 +67,7 @@ model of the instrument, including the spectral transmission function, the
 polarization sensitivity and other effects such as PRNU. This would certainly help in
 understanting the impact of the calibration uncertainties when discussing the error budget.}\\
 
-\textbf{Reply:} A complete radiometric model is outside of the scope of the work presented here. Additional detail will be provided the in the results section outlining where the primary error terms arise in the formation of the measurement vector and how this effect the final uncertainty estimation.
+\textbf{Reply:} A complete radiometric model has not been necessary for this project; however additional detail is provided the in the results section outlining where the primary error terms arise in the formation of the measurement vector and how this effect the final uncertainty estimation.
 
 \hrulefill
 
@@ -76,7 +81,7 @@ I would recommend next time to work with sharp emission lines or laser lines
 at some selected wavelengths, and rely on the physics of acousto-optic interaction to
 extrapolate the AOTF response function between the calibration points.}\\
 
-\textbf{Reply:} This will be noted for future work involving the ALI instrument, but a complete spectral calibration performed here helps verify the working range of the device and thus why it was used. As well using a full calibration uses an more exact wavelength calibration then theory which uses some approximations to yield the final form commonly used.
+\textbf{Reply:} This is a good suggestion in addition to our characterization and will be considered for future ALI development.
 
 \hrulefill
 
@@ -91,7 +96,7 @@ temperatures. The reported 0.1\% error in the fit can yield an uncertainty as hi
 your measurements? More details on the precision of the wavelength selection would
 be appreciated.}\\
 
-\textbf{Reply:} A physical model was not selected since since a full wavelength calibration was performed with a spectrometer an an curve could be used to fit the entire wavelength range that was being used by the instrument during the flight. It is understandable that a 0.1\% error in the wavelength calibration results in a maximum error of 1\,nm in the calibrated wavelength, furthermore the difference between the the estimated AOTF flight temperature during flight and the lab calibration was approximately 15$^{\circ}$C which adds an additional uncertainty of approximately 1.5\,nm for a total of approximately 2.5\,nm. With the slowly varying broadband scattering effects of aerosol this error in the wavelength is not a large concern for this prototype. The text has been modified in the following way to clarify these concerns with the addition of the following sentence ``...(see Fig.~6b). Even with considering the temperature change the AOTF would experience during the mission compared to the lab measurements the error of wavelength calibration during the campaign would at most be 2.5/,nm which is acceptable for the slowly varying broadband scattering cross section of aerosol.''.
+\textbf{Reply:} Although a physical model could have been selected to model the AOTF a fit was selected since a full wavelength calibration was performed. For the model used a  maximum error of 1\,nm is possible from the wavelength calibration with the addition of another 1.5\,nm error from the temperature changes. The error in the temperature is estimated by considering the difference from the lab calibration temperatures to the flight temperatures to be approximately 15$^{\circ}$C. Overall, this amounts to a possible wavelength error of 2.5\,nm which has small effect on the retrieval for determining aerosol extinction. With the slowly varying broadband scattering effects of aerosol this error in the wavelength is not a large concern for this prototype. The text has been modified in the following way to clarify these concerns with the addition of the following sentence ``\ldots(see Fig.~6b). Even with considering the temperature change the AOTF would experience during the mission compared to the lab measurements the error of wavelength calibration during the campaign would at most be 2.5\,nm which is acceptable for the slowly varying broadband scattering cross section of aerosol.''.
 
 \hrulefill
 
@@ -102,7 +107,7 @@ Moreover the method described neglects the attenuation by the crystal itself, an
 not clear if the incident light was initially polarized. I would recommend to re-write this
 section such that one can better understand how these values could be obtained.}\\
 
-\textbf{Reply:} Our crystal was rated for 2\,W RF and the power pumped into the crystal was approximately 2.0\,W. As the RF power was increased the the DE increased. However we did not want to exceed the power rating for our crystal. The DE that was determined by our tests were close to the factory specified DE of 60\%. As previously noted, the AOTF was purchase from off the shelf and this was the best option available for our needs. The light entering the system was linearly polarized aligned with the AOTF polarization axis. Lastly the attenuation of the signal from the AOTF is technically a loss of signal and not a change in the DE but was never calculated as the two effects were lumped together in our analysis and a note has been made about this in the text. See section 3.1 for the complete changes to this section.
+\textbf{Reply:} Our crystal was rated for 2\,W RF and the power pumped into the crystal was approximately 2.0\,W. As the RF power was increased the DE increased. However we did not want to exceed the power rating for our crystal. The DE that was determined by our tests were close to the factory specified DE of 60\%. The light entering the system was linearly polarized aligned with the AOTF polarization axis. Lastly the attenuation of the signal from the AOTF is technically a loss of signal and not a change in the DE but was never calculated as the two effects were lumped together in our analysis and a note has been made about this in the text. See section 3.1 for the complete changes to this section.
 
 \hrulefill
 
@@ -114,7 +119,7 @@ which is not solved by the ON/OFF method is the straylight generated after the A
 Is there something that can be said on this based on the characterization that was
 performed?}\\
 
-\textbf{Reply:} From my understanding the propagation directions of the non-desired orders passing through the AOTF are slightly altered by the acoustic wave. As such work was done to verify that an ON/OFF approach would be able to remove most of the unwanted signal from the final image which it was able. As for stray light within the system some was expected due to reflections off of components inside of the system and and estimation of the stray light has been added to the text.
+\textbf{Reply:} The propagation directions of the non-desired orders passing through the AOTF are slightly altered by the acoustic wave. As such work was done to verify that an ON/OFF approach would be able to remove most of the unwanted signal from the final image which it was able. As for stray light within the system some was expected due to reflections off of components inside of the system and estimation of the stray light has been added to the text.
 
 \hrulefill
 
@@ -122,7 +127,7 @@ performed?}\\
 flat field, and if the complete FOV was illuminated. From what can be read, I understand
 that only sub-sections of the detector were illuminated, so it is not clear how the
 response of pixels looking at the bottom of the scene can be related to the response of
-the pixels looking above... This is important as you perform a spatial normalization in
+the pixels looking above\ldots This is important as you perform a spatial normalization in
 the processing algorithm. A mathematical radiometric model would help understanding
 what has been done. I would suggest to re-write this section in order to explain how
 the setup looked like, with which accuracy for the flatness of the radiometric field, and
@@ -142,7 +147,7 @@ probably my main concern with the manuscript: due to the absence of a mathematic
 model of the instrument, it is not possible to understand the amplitude of the different
 errors, and the results presented in fig.12 cannot really be interpreted.}\\
 
-\textbf{Reply:} Though the inversion method used to retrieve aerosol from the limb a large amplification of error is seen in the final determined value. If a radiance measurement has approximately a 1\% uncertainty this is amplified by the retrieval method by approximately a factor of ten (Regier et al., 2014; Bourassa et al., 2012). So with a 5-8\% error on the radiance profile a 40-70\% uncertainty is expected on the retrieved result. From our error budget analysis about 3-5\% of the error on the measurement vector is propagated from the flat fielding calibration and contributes the largest uncertainty in the final aerosol extinction measurements. Additional details can be found in the results section.
+\textbf{Reply:} The aerosol retrieval method is very sensitive detector error and and stray light due to the the aerosol signal being a small residual. Through the inversion method a large amplification of error is seen in the final determined value. If a radiance measurement has approximately a 1\% uncertainty this is amplified by the retrieval method by approximately a factor of ten (Regier et al., 2014; Bourassa et al., 2012). So with a 5-8\% error on the radiance profile a 40-70\% uncertainty is expected on the retrieved result. Reducing the error attributed by flat-fielding and further stray light will greatly improve the uncertainty of the aerosol data product.
 
 \hrulefill
 
@@ -150,7 +155,7 @@ Bourassa,~A.~E., McLinden,~C.~A., Bathgate,~A.~F., Elash,~B.~J., and
 Degenstein,~D.~A.: Precision estimate for Odin-OSIRIS limb scatter
 retrievals,~J. Geophys. Res., 117, D04303,
 doi:10.1029/2011JD016976,
-2012a.
+2012a.\\
 
 Rieger,~L.~A., Bourassa,~A.~E., and Degenstein,~D.~A.: Stratospheric aerosol
 particle size information in Odin-OSIRIS limb scatter spectra, Atmos. Meas.

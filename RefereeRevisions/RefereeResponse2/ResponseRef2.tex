@@ -1,5 +1,10 @@
 \documentclass[12pt, notitlepage]{article}
 
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+
+\setlength\parindent{0pt}
+
 \title{Interactive comment to ``The Aerosol Limb Imager: acousto-optic imaging of limb scattered
 sunlight for stratospheric aerosol profiling'' by B. J. Elash et al}
 
@@ -22,8 +27,8 @@ We would like to thank the referee for their helpful comments and suggestions. B
 unclear, but maybe it means that no single measurement technique provides the full
 range of aerosol properties unambiguously?}\\
 
-\textbf{Reply:} The text has been modified to improve clarity, and the sentence now reads ``...although due to the variability of physical composition
-and particle size, no single measurement technique can fully determine the full range of aerosol properties unambiguously.''.
+\textbf{Reply:} The text has been modified to improve clarity, and the sentence now reads ``\ldots although due to the variability of physical composition
+and particle size, no single measurement technique can determine the full range of aerosol properties unambiguously.''.
 
 \hrulefill
 
@@ -31,7 +36,7 @@ and particle size, no single measurement technique can fully determine the full 
 
 \textit{``. . . Charlson et al., 1969); acquire . . .'' – the semicolon should be removed.}\\
 
-\textbf{Reply:} It has already been removed in the AMTD published paper.
+\textbf{Reply:} Corrected.
 
 \hrulefill
 
@@ -41,7 +46,7 @@ and particle size, no single measurement technique can fully determine the full 
 to other microphysical parameters'' – Do you mean that it is difficult to derive other
 microphysical parameters from the retrieved extinction profiles?}\\
 
-\textbf{Reply:} Partially, it is difficult to determine the microphysical parameters as well comparisons can be difficult between instruments. The text has been modified in the following to make this clearer. ``have generally compared well with ground based and
+\textbf{Reply:} Partially, it is difficult to determine the microphysical parameters which can make comparisons between instruments  difficult. The text has been modified in the following to make this clearer. ``have generally compared well with ground based and
 in-situ measurements, although there are challenges associated with
 determining microphysical
 parameters and comparison between instruments can be challenging.''
@@ -83,7 +88,7 @@ studied extensively and the conclusions are somewhat controversial''.
 \textit{It might be useful to measure the CATS mission, which recently began operation of a
 lidar on the International Space Station.}\\
 
-\textbf{Reply:} The CATS mission was unknown to us and and been added at the end of this paragraph has a current instrument that measures aerosol. The following sentence was added ``More recently the lidar instrument Cloud Aerosol Transport System (CATS) (Chuang et al., 2013) has been placed on the international space station in 2015 for an expected mission lifetime of three years.''
+\textbf{Reply:} A reference to the CATS mission has been added at the end of this paragraph with the following sentence. ``More recently the lidar instrument Cloud Aerosol Transport System (CATS) (Chuang et al., 2013) has been placed on the international space station in 2015 for an expected mission lifetime of three years.''
 
 \hrulefill
 
@@ -92,7 +97,7 @@ lidar on the International Space Station.}\\
 \textit{All equations are labeled oddly: The equation number appears to be part of the equation
 text (rather than right-justified). This is difficult to read and should be fixed.}\\
 
-\textbf{Reply:} This has been fixed in the AMTD published paper.
+\textbf{Reply:} This has been fixed.
 
 \hrulefill
 
@@ -101,7 +106,7 @@ text (rather than right-justified). This is difficult to read and should be fixe
 \textit{``. . . acousto-optic diffraction angle is not constant angle with wavelength. . .'' – Do you
 mean ``. . . angle varies with wavelength. . .''?}\\
 
-\textbf{Reply:} Yes that is the meaning of the sentence and the text has been altered for clarity. It now read ``The acousto-optic diffraction angle varies as the filtered wavelength is changed...''.
+\textbf{Reply:} Yes that is the meaning of the sentence and the text has been altered for clarity. It now read ``The acousto-optic diffraction angle varies as the filtered wavelength is changed\ldots''.
 
 \hrulefill
 
@@ -111,7 +116,7 @@ mean ``. . . angle varies with wavelength. . .''?}\\
 you'd like to confess in this paragraph, I think you can honestly say that ``We paid careful
 attention to stray light. . .''}\\
 
-\textbf{Reply:} The changed has been made in the text.
+\textbf{Reply:} The change has been made in the text.
 
 \hrulefill
 
@@ -120,7 +125,7 @@ attention to stray light. . .''}\\
 \textit{``. . . this wavelength dependant change is negligible. . .'' – should say ``dependent'', and
 could you quantify how small the change is?}\\
 
-\textbf{Reply:} The correction has been made. And this change is typically less than a micron for the entire wavelength range of ALI and the following has been added to the text ``this wavelength dependent change is less than a micron for the current ALI design and is considered negligible.''.
+\textbf{Reply:} The correction has been made. And this change is typically less than a micrometer for the entire wavelength range of ALI and the following has been added to the text ``this wavelength dependent change is less than a micrometer for the current ALI design and is considered negligible.''.
 
 \hrulefill
 
@@ -150,7 +155,7 @@ high altitudes in the field measurements, but neither the magnitude of the expec
 stray light level nor the observed excess stray light level is clearly quantified here. I
 would like to see both numbers estimated.}\\
 
-\textbf{Reply:} The text has been altered to include this information and has added the following sentence: ''For these altitude the ratio of signal to stray light was expected to be between 2-3 however some regions dropped down to an estimation of approximately slightly below one to one.``
+\textbf{Reply:} The text has been altered to include this information and has added the following sentence: ``For these altitude the ratio of signal to stray light was expected to be between 2-3 however some regions dropped down to an estimation of approximately slightly below one to one.''
 
 \hrulefill
 
@@ -167,12 +172,8 @@ particle size distribution, and particle composition) to use the same assumption
 ALI retrieval as in the OSIRIS retrieval? Was this tried, in an attempt to sort out which
 differences might be most significant?}\\
 
-\textbf{Reply:} This was not entirely possible and was attempted. The same particle size distribution
-that is used for OSIRIS retrieval was used in the ALI retrieval. And the retrieved particle size is vary
-similar to the OSIRIS assumed distribution (OSIRIS assumes a mode radius of 0.08 $\mu$m whereas ALI found a size of 0.077 $\mu$ both use a mode width of 1.6).  However, the limiting factor leading to difficulty
-in using this method is that the OSIRIS retrieval uses a higher altitude for normalization which
-is outside of ALI's usable range. This results in always using a lower normalization point and results in a difference
-that could not be rectified by changing ALI's altitude range.\\
+\textbf{Reply:} This was was attempted was not possible. The same particle size distribution and composition 
+that is used for the OSIRIS retrieval was also used in the ALI retrieval.  However, two factors limited the ability to use the same assumptions as OSIRIS. First, OSIRIS uses a normalization altitude that is above the usable range for ALI resulting in ALI always having a lower upper bound than OSIRIS. Second, OSIRIS uses a wavelength normalization at 470\,nm when calculating its measurement vector (Bourassa et al., 2012). However ALI does not down extend down to this wavelength range and as such a short wavelength normalization could not be accounted for in the analysis. Between these two effects the same assumptions for OSIRIS could not be replicated for ALI and the retrievals would have some biases that can not be reconciled.\\
 
 \textit{2. How is the high altitude aerosol load a source of systematic differences? Again,
 couldn't the same assumed value be used for both retrievals? (I assume we're talking
@@ -185,7 +186,7 @@ commas are missing, but I think you mean particle size distribution and particle
 It might be useful to state the scattering angle for the solar beam for the ALI observations,
 and to compare its value to the same value for the OSIRIS observations.}\\
 
-\textbf{Reply:} The phase ``particle size composition and distributions'' has been replace with ``particle size distribution and particle composition'' to help clarify this statement. The scatter angle for ALI and OSIRIS have been added to the text and well as a short comparison with the addition of the following sentences ``The solar scattering angle for a measurement can also have an effect on the retrieved profile due sensitivity to the scatter cross sections from the particle size distributions. For the ALI image the solar scattering angle is 98\,degrees and for the five OSIRIS scan they are 77, 89, 90, 91, 92, 93\,degrees. With the exception of the forward scatter angles of 77 and 89\,degrees form OSIRIS the scatter angles between OSIRIS and ALI are similar and should not cause a large effect on the retried profiles.''\\
+\textbf{Reply:} The phase ``particle size composition and distributions'' has been replace with ``particle size distribution and particle composition'' to help clarify this statement. The scattering angle for ALI and OSIRIS have been added to the text and well as a short comparison with the addition of the following sentences ``The solar scattering angle for a measurement can also have an effect on the retrieved profile due sensitivity to the scattering cross sections from the particle size distributions. For the ALI image the solar scattering angle is 98\,degrees and for the five OSIRIS scans they are 77, 89, 90, 91, 92, 93\,degrees. With the exception of the forward scatter angles of 77 and 89\,degrees from OSIRIS the scattering angles between OSIRIS and ALI are similar and should not cause a large effect on the retrieved profiles.''\\
 
 \hrulefill
 
@@ -196,7 +197,7 @@ so can you explain what it means when an Angstrom coefficient that varies with
 height is observed in the retrieved extinction profiles? And how does the observed
 value compare to the value that Mie theory would predict for the assumed size distribution?}\\
 
-\textbf{Reply:} In the retrieval the Angstr\"{o}m coefficient for each altitude is calculated independently and allows for each altitude to have a unique value. However when the state of the model is update the median of the altitude dependent Angstr\"{o}m profile is used as the value of the particle size distribution for the next iteration. This results in retrievals that yield altitude dependent coefficient but uses the median in the next iteration of the retrieval. A varying particle size distributions with respect to height in the retrieval algorithm results in instability in the method thus why the median was used. The observed Angstr\"{o}m coefficient is approximately 2.7 whereas the assumed distribution is 2.3. The fine mode average of Angstr\"{o}m coefficients from work derived from Deshler et al. (2003) are 2.1 to 3.4 and ALI's determined value is within the expected range as stated in the text. The addition of the retrieved median Anstr\"{o}m coefficient and the Desher et al. (2003) range has been added to the text.
+\textbf{Reply:} In the retrieval the Angstr\"{o}m coefficient for each altitude is calculated independently and allows for each altitude to have a unique value. However when the state of the model is updated the median of the altitude dependent Angstr\"{o}m profile is used as the value of the particle size distribution for the next iteration. This results in retrievals that yield altitude dependent coefficient but use the median in the next iteration of the retrieval. The method used here provides stability and a full discussion of of particle size retrievals is out of scope for the work presented here (Rault and Loughman, 2013; Rieger et al., 2014). The observed Angstr\"{o}m coefficient is approximately 2.7 whereas the assumed distribution is 2.3. The fine mode average of Angstr\"{o}m coefficients from work derived from Deshler et al. (2003) are 2.1 to 3.4 and ALI's determined value is within the expected range as stated in the text. The addition of the retrieved median Anstr\"{o}m coefficient and the Deshler et al. (2003) range has been added to the text.
 
 \hrulefill
 
@@ -204,11 +205,25 @@ value compare to the value that Mie theory would predict for the assumed size di
 
 \textit{``. . .should be tacked in future iterations. . .'' – should this say ``tackled''?}\\
 
-\textbf{Reply:} Correct in the AMTD published version.
+\textbf{Reply:} Corrected.
 
 \hrulefill
 
+Bourassa,~A.~E., Rieger,~L.~A., Lloyd,~N.~D., and Degenstein,~D.~A.:
+Odin-OSIRIS stratospheric aerosol data product and SAGE III intercomparison,
+Atmos. Chem. Phys., 12, 605--614,
+doi:10.5194/acp-12-605-2012,
+2012b.\\
 
+Rault,~D.~F. and Loughman,~R.~P.: The OMPS limb profiler environmental data
+record algorithm theoretical basis document and expected performance, IEEE T.
+Geosci. Remote, 51, 2505--2527, 2013.\\
+
+Rieger,~L.~A., Bourassa,~A.~E., and Degenstein,~D.~A.: Stratospheric aerosol
+particle size information in Odin-OSIRIS limb scatter spectra, Atmos. Meas.
+Tech., 7, 507--522,
+doi:10.5194/amt-7-507-2014,
+2014.\\
 
 \end{document}
 

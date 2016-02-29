@@ -74,7 +74,7 @@ et~al., 2014).
 Since its discovery with stratospheric balloon observations (Junge
 et~al., 1961), stratospheric aerosol has been measured with various
 techniques, although due to the variability of physical composition
-and particle size, no single measurement technique can fully determine the full range of aerosol properties unambiguously. In-situ balloon observations continue to be used and have
+and particle size, no single measurement technique can determine the full range of aerosol properties unambiguously. In-situ balloon observations continue to be used and have
 provided highly valuable data sets, including most notably the long
 time series of optical particle counter measurements from Laramie, WY
 (Deshler et~al., 2003, 2006; Kovilakam et~al., 2015). Aircraft-borne
@@ -345,7 +345,7 @@ response of a~standard and readily available CCD detector. We paid careful atten
 both internal scatter and out-of-field signal.
 
 The use of the AOTF essentially limits the optical design to two
-possible basic layouts: the telecentric or the telescopic system. The telecentric system uses a layout that removes perspective from the image and object plane and the telescoptic system uses a telescope as the front end optics. This
+possible basic layouts: the telecentric or the telescopic system. The telecentric system uses a layout that removes perspective from the image and object plane by creating a condition that requires the chief ray to be parallel to the optical axis in both object and image space. The telescopic system uses a simple two lens afocal system to resize and collimate the incoming rays of light into the AOTF. This
 limitation is mainly that the incoming light beams at the AOTF device
 must enter at less than the acceptance angle, which is defined by
 a~threshold beyond which the diffraction efficiency falls off
@@ -395,7 +395,7 @@ that occurs is given by the following relation
 \end{align}
 where $\delta$ is the displacement from the original path and $t$ is the
 thickness of the crystal. However, this wavelength
-dependent change is less than a micron for the current ALI design and is considered negligible.
+dependent change is less than a micrometer for the current ALI design and is considered negligible.
 
 In light of the requirements for imaging aerosol, we have chosen
 a~telescopic design for the ALI prototype. Since the wavelength
@@ -631,7 +631,7 @@ and is expected from the ray trace model. Note that this method also
 removes any dark current associated with the detector. This two-image
 method was used operationally during the balloon measurement campaign
 such that images captured had a~corresponding ``AOTF-off'' image
-immediately obtained with the same exposure time. For the calibration images an average signal to noise ratio of 40 was noted.
+immediately obtained with the same exposure time. For the calibration images an average stray light to signal ratio of 2.5$\cdot10^{-2}$ was noted.
 
 \subsection{Relative flat fielding calibration}
 
@@ -718,7 +718,7 @@ layer. It should also be noted that some high altitude stray light is also
 visible in this mean residual image that was not observed in the laboratory
 tests. For the high altitudes in the range of 27 to 30\,\unit{km} the expected SNR was estimated to be between 2-3 but for the campaign SNR for some regions dropped down to approximately one. This may be due to contamination from scattering from a~baffle vein or
 a~nearby component of the gondola, although the true cause is unknown at this
-point. 
+point.
 
 For ease of further analysis, and to increase the precision of the
 measurements to a~minimum of 0.6 MTF the images were averaged into
@@ -884,7 +884,7 @@ S_{\epsilon,ij}=
 \end{align}
 This results in relative error in the measurement vectors of approximately 10-15\% for the cross terms and and 25-35\% for the diagonal terms. Propagating this uncertainty though the retrieval method results in large uncertainty on the retrieved aerosol extinction around 40-70\% dependent on the altitude. Reducing the error in the relative calibration would greatly improve the overall uncertainty in the ALI retrievals since it contributes the current largest factor to the calibrated radiances.
 
-The 750\,\unit{nm} aerosol extinction determined by ALI is compared to the retrieved aerosol extinctions by OSIRIS. In the right panel of Fig.~12 the red curve is the average 750\,\unit{nm} aerosol extinction profiles of the
+The 750\,\unit{nm} aerosol extinction determined by ALI is compared to the retrieved aerosol extinctions by OSIRIS. In the right panel of Fig.~12 the red curve is the average 750\,\unit{nm} aerosol extinction profile of the
 same five coincident OSIRIS scans used for the ozone profile. The
 retrieved extinction profiles from ALI and OSIRIS are within with the
 total retrieval uncertainty. Aerosol is notoriously
@@ -894,7 +894,7 @@ differences are generally below 20--30\,{\%} up to 30\,\unit{km}
 (Bourassa et~al., 2012b; Rieger et~al., 2015). There are also several possible systematic errors not
 accounted for in the inversion including the choice of retrieval
 altitude ranges, particle size distribution and  particle composition, stray
-light, and the high altitude aerosol load. The solar scattering angle for a measurement can also have an effect on the retrieved profile due sensitivity to the scatter cross sections from the particle size distributions. For the ALI image the solar scattering angle is 98\,degrees and for the five OSIRIS scan they are 77, 89, 90, 91, 92, 93\,degrees. With the exception of the forward scatter angles of 77 and 89\,degrees form OSIRIS the scatter angles between OSIRIS and ALI are similar and should not cause a large effect on the retried profiles. Furthermore, there may be
+light, and the high altitude aerosol load. The solar scattering angle for a measurement can also have an effect on the retrieved profile due sensitivity to the scattering cross sections from the particle size distributions. For the ALI image the solar scattering angle is 98\,degrees and for the five OSIRIS scans they are 77, 89, 90, 91, 92, 93\,degrees. With the exception of the forward scatter angles of 77 and 89\,degrees from OSIRIS the scattering angles between OSIRIS and ALI are similar and should not cause a large effect on the retrieved profiles. Furthermore, there may be
 further issues to explore with the polarized measurement and forward
 model. Regardless, the results are encouraging.
 
