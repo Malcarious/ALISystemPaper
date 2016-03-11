@@ -1,7 +1,7 @@
 \documentclass[amtd, online, hvmath]{copernicus}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL amt-2015-329-discussions-typeset_source-version3.tex   Fri Jan 15 11:02:17 2016
-%DIF ADD amt-2015-329-discussions-typeset_source-version4.tex   Tue Mar  1 11:48:36 2016
+%DIF ADD amt-2015-329-discussions-typeset_source-version4.tex   Fri Mar  4 12:49:09 2016
 %DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
 %DIF UNDERLINE PREAMBLE %DIF PREAMBLE
 \RequirePackage[normalem]{ulem} %DIF PREAMBLE
@@ -623,7 +623,7 @@ and near infrared spectral range.
 
 \DIFdelbegin \DIFdel{The same set of experimental data was also used }\DIFdelend \DIFaddbegin \DIFadd{An experiment was performed on several wavelengths }\DIFaddend to determine the \DIFaddbegin \DIFadd{RF power that yielded the highest throughput through the AOTF using an collimated light source. For the AOTF in ALI, the maximum throughput occurred when the RF power was at the limit of the AOTF which was 2\,W. Following, the }\DIFaddend diffraction efficiency of the AOTF \DIFdelbegin \DIFdel{, along with an additional
 measurement }\DIFdelend \DIFaddbegin \DIFadd{was determined by using two sets measurements. The first is the experimental data used to perform the wavelength calibration, the second is measurements }\DIFaddend of the intensity of the incident collimated light beam. \DIFdelbegin \DIFdel{This was simply acquired by removing the AOTF from the same
-experimental setup. }\DIFdelend \DIFaddbegin \DIFadd{The light in both experiments was linearly polarized and aligned with the polarization axis of the AOTF and for the second set the AOTF was simply removed from the optical chain. It should be noted that the attenuation of the AOTF crystal itself was not determined independently and will be combined with the diffraction efficiency. We are more concerned about signal throughput of the device so the combination of the effects is acceptable. }\DIFaddend The incident light source was then measured with the \DIFaddbegin \DIFadd{same }\DIFaddend iHR320 spectrometer and Synapse CCD. By taking the ratio of the intensity at the diffracted wavelength to the incident intensity the diffraction \DIFdelbegin \DIFdel{efficiency }\DIFdelend \DIFaddbegin \DIFadd{efficacy }\DIFaddend was determined. It was found to vary between
+experimental setup. }\DIFdelend \DIFaddbegin \DIFadd{The light in both experiments was linearly polarized and aligned with the polarization axis of the AOTF and for the second set the AOTF was simply removed from the optical chain. It should be noted that the attenuation of the AOTF crystal itself was not determined independently and will be combined with the diffraction efficiency. We are more concerned about signal throughput of the device so the combination of the effects is acceptable. }\DIFaddend The incident light source was then measured with the \DIFaddbegin \DIFadd{same }\DIFaddend iHR320 spectrometer and Synapse CCD. By taking the ratio of the intensity at the diffracted wavelength to the incident intensity the diffraction efficiency was determined. It was found to vary between
 54--64\,{\%} across the measured spectral range. It should be noted
 that the diffraction efficiency changes also with respect to incoming
 angle and this experimental determination only measured the
@@ -751,7 +751,7 @@ some indication of horizontal variation in radiance significantly above the
 cloud level, possibly due to real atmospheric variability in the aerosol
 layer. It should also be noted that some high altitude stray light is also
 visible in this mean residual image that was not observed in the laboratory
-tests. \DIFaddbegin \DIFadd{For the high altitudes in the range of 27 to 30\,}\unit{km} \DIFadd{the expected signal to stray light was estimated to be between 2-3 but for the campaign signal to stray light for some regions dropped down slightly below one. }\DIFaddend This may be due to contamination from scattering from a~baffle vein or
+tests. \DIFaddbegin \DIFadd{For the high altitudes in the range of 27 to 30\,km the expected ratio of signal to stray light was estimated to be between 2-3 but for the campaign the ratio of signal to stray light for some regions dropped down slightly below one. }\DIFaddend This may be due to contamination from scattering from a~baffle vein or
 a~nearby component of the gondola, although the true cause is unknown at this
 point.
 
@@ -793,8 +793,8 @@ scattering cross sections from the Mie scattering solution (Wiscombe,
 1980). The modeled radiances for the nonlinear inversion were computed
 with the SASKTRAN High Resolution radiative transfer engine
 (SASKTRAN-HR) (Bourassa et~al., 2008; Zawada et~al., 2015) using the
-newly developed vector module for polarization (Dueck et~al.,
-2015). The output of SASKTRAN-HR gives the Stokes vectors for the
+newly developed vector module for polarization\DIFdelbegin \DIFdel{(Dueck et~al. ,
+2015). }\DIFdelend \DIFaddbegin \DIFadd{. }\DIFaddend The output of SASKTRAN-HR gives the Stokes vectors for the
 radiance on the model reference frame, which are then rotated into the
 instrument's coordinate system. Once rotated, the polarization signal
 required to match the ALI measurement is the vertical polarization
@@ -928,22 +928,21 @@ error and neglects any model and atmospheric state errors. \DIFaddbegin \DIFadd{
 same five coincident OSIRIS scans used for the ozone profile. The
 retrieved extinction profiles from ALI and OSIRIS are within \DIFdelbegin \DIFdel{with }\DIFdelend the
 total retrieval uncertainty\DIFdelbegin \DIFdel{below 20\,}%DIFDELCMD < \unit{km}%%%
-\DIFdel{. It is encouraging,
-however, that the instruments follow the same overall profile shape
+\DIFdelend . It is encouraging \DIFdelbegin \DIFdel{,
+however, }\DIFdelend that the instruments follow the same overall profile shape
 including the stratospheric layer and the steep increase below
-15\,}%DIFDELCMD < \unit{km}%%%
-\DIFdel{.  However, the OSIRIS and ALI extinctions do not agree
+15\,\unit{km}. \DIFdelbegin \DIFdel{However, the OSIRIS and ALI extinctions do not agree
 within error between 20 to 25\,}%DIFDELCMD < \unit{km}%%%
-\DIFdelend . Aerosol is notoriously
+\DIFdel{. }\DIFdelend Aerosol is notoriously
 difficult to validate in remote sensing with various technique and
 instrument geometries, and \DIFdelbegin \DIFdel{yet }\DIFdelend the SAGE II, SAGE III and OSIRIS
 differences are generally below 20--30\,{\%} up to 30\,\unit{km}
 (Bourassa et~al., 2012b; Rieger et~al., 2015)\DIFdelbegin \DIFdel{so the disagreement
 between OSIRIS and ALI from 20 to 25\,}%DIFDELCMD < \unit{km} %%%
 \DIFdel{found here is somewhat
-puzzling. However, given the retrieved uncertainty, the OSIRIS profile
+puzzling}\DIFdelend . However, given the retrieved uncertainty, the OSIRIS profile
 is only outside the upper error bound of ALI by less than
-10\,{\%}}\DIFdelend . There are also several possible systematic errors not
+10\,{\%} \DIFaddbegin \DIFadd{between 20 and 25\,}\unit{km}\DIFaddend . There are also several possible systematic errors not
 accounted for in the inversion including the choice of retrieval
 altitude ranges, particle size \DIFdelbegin \DIFdel{composition and  distributions}\DIFdelend \DIFaddbegin \DIFadd{distribution and  particle composition}\DIFaddend , stray
 light, and the high altitude aerosol load. \DIFdelbegin \DIFdel{This is also the first
@@ -1161,12 +1160,14 @@ doi:\href{http://dx.doi.org/10.1029/2005JD006089}{10.1029/2005JD006089},
 2006.
 
 
-\bibitem{19}
-Dueck, S. R., Bourassa, A. E., and Degenstein, D. A.: Polarization in the
+\DIFdelbegin %DIFDELCMD < \bibitem{19}
+%DIFDELCMD < %%%
+\DIFdel{Dueck, S. R., Bourassa, A. E., and Degenstein, D. A.: Polarization in the
 SASKTRAN radiative transfer framework, in preparation, 2015.
+}%DIFDELCMD < 
 
-
-\bibitem{20}
+%DIFDELCMD < %%%
+\DIFdelend \bibitem{20}
 Ernst,~F., von~Savigny,~C., Rozanov,~A., Rozanov,~V., Eichmann,~K.-U.,
 Brinkhoff,~L.~A., Bovensmann,~H., and Burrows,~J.~P.: Global stratospheric
 aerosol extinction profile retrievals from SCIAMACHY limb-scatter
